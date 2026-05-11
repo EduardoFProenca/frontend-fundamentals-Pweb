@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade12</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Rectângulo</h1>
+
+        <div class="rect-row">
+            <div class="rect-campo">
+                <label for="entAltura">X:</label>
+                <input type="number" id="entAltura" step="0.1" placeholder="Altura" required>
+            </div>
+            <div class="rect-campo">
+                <label for="entBase">Y:</label>
+                <input type="number" id="entBase" step="0.1" placeholder="Base" required>
+            </div>
+        </div>
+
+        <h3 id="resRectangulo"></h3>
+        <button onclick="calcRectangulo('entAltura','entBase')">Calcular</button>
+    </div>
+
+    <br>
+
+    <div class="card">
+        <h3>Dados da Conta</h3>
+
+        <div class="conta-grid">
+            <div class="conta-campo">
+                <label>Nome correntista:</label>
+                <input type="text" id="entNome" placeholder="Digite o seu Nome">
+            </div>
+            <div class="conta-campo">
+                <label>Banco:</label>
+                <input type="text" id="entBanco" placeholder="Nome do Banco">
+            </div>
+            <div class="conta-campo">
+                <label>Número da Conta:</label>
+                <input type="number" id="entNumero" placeholder="Número da conta">
+            </div>
+            <div class="conta-campo">
+                <label>Saldo Atual:</label>
+                <input type="number" id="entSaldo" placeholder="R$ 0,00">
+            </div>
+        </div>
+
+        <div class="container-flex">
+            <div class="card">
+                <div class="titulo-radio">
+                    <input type="radio" id="entCorrent" value="0" name="tipoConta" required checked>
+                    <label>Exclusivo Conta Corrente</label>
+                </div>
+                <label>Saldo Especial:</label>
+                <input type="number" id="entEspecial" placeholder="Limite do cheque especial">
+            </div>
+            <div class="card">
+                <div class="titulo-radio">
+                    <input type="radio" id="entPoupanca" value="1" name="tipoConta" required>
+                    <label>Exclusivo Poupança</label>
+                </div>
+                <label>Taxa de Juros (%):</label>
+                <input type="number" id="entJuros" step="0.01" placeholder="Ex: 0.5">
+                <br>
+                <label>Data de Vencimento:</label>
+                <input type="date" id="entVencimento">
+            </div>
+        </div>
+
+        <br>
+        <button onclick="criarContas()">Criar e Mostrar Contas</button>
+        <br>
+        <div>
+            <p id="res"></p>
+        </div>
+    </div>
+</body>
+
+</html>
