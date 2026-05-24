@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade14</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Conversão de Palavras</h1>
+
+        <div class="rect-row">
+            <div class="rect-campo">
+                <label for="idTexto">Texto:</label>
+                <input type="text" id="idTexto" placeholder="Digite sua frase aqui..." required>
+            </div>
+
+            <div class="radio-container">
+                <div class="radio-group">
+                    <input type="radio" id="entMaiusculas" value="maiusculas" name="tipoConversao" required checked>
+                    <label for="entMaiusculas">Maiúsculas</label>
+                </div>
+
+                <div class="radio-group">
+                    <input type="radio" id="entMinusculas" value="minusculas" name="tipoConversao" required>
+                    <label for="entMinusculas">Minúsculas</label>
+                </div>
+            </div>
+        </div>
+        <p id="res"></p>
+    <h3 id="resRectangulo"></h3>
+    <button onclick="pocesConverter('idTexto')">Converter</button>
+   
+    </div>
+     </div>
+
+    <br>
+
+
+
+    </div>
+    </div>
+</body>
+
+</html>
