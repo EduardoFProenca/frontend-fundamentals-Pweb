@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade15</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Formulário Principal</h1>
+        <hr>
+        <br><br>
+        <form id="meuFormulario" name="meuFormulario" onsubmit="return bntEnviar(event)">
+            <div>
+                <label>Nome:</label>
+                <input type="text" id="entNome" placeholder="Digite seu nome">
+                <span class="mensagem-erro" style="display:none;">
+                    Digite pelo menos 10 caracteres!
+                </span>
+            </div>
+            <br>
+            <div>
+                <label>E-mail:</label>
+                <input type="email" id="entEmail" required placeholder="Digite seu e-mail">
+                <span class="mensagem-erro">
+                    Por favor, insira um e-mail válido!
+                </span>
+            </div>
+
+            <br><br>
+            <p>Comentário</p>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="30"
+                placeholder="Digite seu texto aqui..."></textarea>
+            <span class="mensagem-erro">
+                Digite pelo menos 20 caracteres!
+            </span>
+
+            <br><br>
+            <hr>
+            <div class="radio-container">
+                <h2>Pesquisa:</h2>
+                <h4>Primeira vez nesta página?</h4>
+                <div class="opcoes-inline">
+                    <div class="radio-group">
+                        <input type="radio" id="entSim" value="1" name="participacao" required>
+                        <label for="entSim">Sim</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="entNao" value="0" name="participacao" required>
+                        <label for="entNao">Não</label>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <button type="submit">Enviar</button>
+            <button type="button" onclick="bntLimpar()">Limpar</button>
+        </form>
+    </div>
+</body>
+
+</html>
