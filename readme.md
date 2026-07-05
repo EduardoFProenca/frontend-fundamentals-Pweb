@@ -1,4 +1,4 @@
-# 📚 PWEB — Programação para Web
+# 📚frontend-fundamentals-Pweb
 
 Repositório com os projetos e exercícios desenvolvidos na disciplina de **Programação para Web** do curso de Análise e Desenvolvimento de Sistemas — FATEC Sorocaba.
 
